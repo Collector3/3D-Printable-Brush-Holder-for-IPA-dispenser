@@ -4,7 +4,7 @@ rotate(a=[0,180,225]) {
 	// Extruded cylinder for brush handle
 	difference() {
 		union() {
-			translate([26.5,30,-50]) cylinder(r=10,h=50);
+			translate([26.5,30,-70]) cylinder(r=10,h=70);
 			// Ring and hole
 			difference() { 
 				union() {
@@ -21,6 +21,6 @@ rotate(a=[0,180,225]) {
 			  	cylinder(h=4.00, r=18.0);
 			}
 		}
-		translate([26.5,30,-50]) cylinder(r=8.5, h=49);
+		translate([26.5,30,-70]) cylinder(r=8.5, h=69);
 	}
 }
