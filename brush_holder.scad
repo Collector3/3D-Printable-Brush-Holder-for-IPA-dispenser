@@ -1,8 +1,9 @@
 $fn=100;
 // Flip entire object for printing (bottom->up)
 rotate(a=[0,180,225]) {
+difference() {
+   difference() {
 	// Extruded cylinder for brush handle
-	difference() {
 		union() {
 			translate([26.5,30,-70]) cylinder(r=10,h=70);
 			// Ring and hole
@@ -23,4 +24,7 @@ rotate(a=[0,180,225]) {
 		}
 		translate([26.5,30,-70]) cylinder(r=8.5, h=69);
 	}
+   // Drain hole
+	translate([26.5,30,-1]) #cylinder(r=6,h=5);
+   }
 }
