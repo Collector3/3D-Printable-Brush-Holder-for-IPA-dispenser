@@ -25,6 +25,6 @@ difference() {
 		translate([26.5,30,-70]) cylinder(r=8.5, h=69);
 	}
    // Drain hole
-	translate([26.5,30,-1]) #cylinder(r=6,h=5);
+	translate([26.5,30,-1]) #cylinder(r=7.5,h=5);
    }
 }
